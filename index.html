@@ -405,7 +405,7 @@
       <span class="hi">संपर्क करें</span><span class="en">Contact</span>
     </div>
     <div style="font-size:13px;color:var(--text-muted);">
-      Email: hello.anidesi@gmail.com<br>
+      Email: anidesiofficial@gmail.com<br>
       <span class="hi">Review request, collaboration, या feedback के लिए email करें।</span>
       <span class="en">For review requests, collaborations, or feedback.</span>
     </div>
@@ -438,23 +438,48 @@
 <script>
 // ── LANGUAGE TOGGLE ──
 function toggleLang() {
-  const body = document.body;
-  const isHindi = body.classList.contains('lang-hi');
-  body.classList.toggle('lang-hi', !isHindi);
-  body.classList.toggle('lang-en', isHindi);
-  document.getElementById('active-lang').textContent  = isHindi ? 'EN'    : 'हिंदी';
-  document.getElementById('inactive-lang').textContent = isHindi ? 'हिंदी' : 'EN';
-  localStorage.setItem('anidesi-lang', isHindi ? 'en' : 'hi');
+const body = document.body;
+const isHindi = body.classList.contains('lang-hi');
+body.classList.toggle('lang-hi', !isHindi);
+body.classList.toggle('lang-en', isHindi);
+document.getElementById('active-lang').textContent =
+isHindi ? 'EN' : 'हिंदी';
+document.getElementById('inactive-lang').textContent =
+isHindi ? 'हिंदी' : 'EN';
+localStorage.setItem(
+'anidesi-lang',
+isHindi ? 'en' : 'hi'
+);
 }
 
 // Restore saved language
 (function(){
-  const saved = localStorage.getItem('anidesi-lang');
-  if (saved === 'en') {
-    document.body.classList.replace('lang-hi','lang-en');
-    document.getElementById('active-lang').textContent   = 'EN';
-    document.getElementById('inactive-lang').textContent = 'हिंदी';
-  }
+const saved =
+localStorage.getItem('anidesi-lang') || 'en';
+if(saved === 'en'){
+
+```
+  document.body.classList.remove('lang-hi');
+  document.body.classList.add('lang-en');
+
+  document.getElementById('active-lang').textContent =
+      'EN';
+
+  document.getElementById('inactive-lang').textContent =
+      'हिंदी';
+```
+
+}else{
+
+```
+  document.body.classList.remove('lang-en');
+  document.body.classList.add('lang-hi');
+  document.getElementById('active-lang').textContent =
+      'हिंदी';
+  document.getElementById('inactive-lang').textContent =
+      'EN';
+```
+}
 })();
 
 // ── PAGE NAVIGATION ──
