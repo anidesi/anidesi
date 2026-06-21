@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AniDesi — Anime & Webtoon Reviews for India — AniDesi</title>
+<meta name="description" content="India's anime and webtoon review platform. Honest reviews in Hindi and English.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Ani<span class="dot">Desi</span></a>
+    <div class="nav-links">
+      <a class="nav-link active" href="index.html"><span class="en">Home</span><span class="hi">होम</span></a>
+      <a class="nav-link " href="category-must-read.html"><span class="en">All Webtoons</span><span class="hi">सभी वेबटून</span></a>
+    </div>
+    <div class="lang-toggle" onclick="toggleLang()">
+      <span id="active-lang" class="pill">EN</span>
+      <span id="inactive-lang" class="dim">हिंदी</span>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="disclaimer">
+    <span class="en">📢 AniDesi is an independent anime and webtoon review platform and is not affiliated with any publisher, studio, or streaming service.</span>
+    <span class="hi">📢 AniDesi एक independent anime और webtoon review platform है। हम किसी भी publisher, studio, या streaming service से affiliated नहीं हैं।</span>
+  </div>
+  <div class="section-head">
+    <div class="section-title"><span class="en">Browse by Category</span><span class="hi">श्रेणी के अनुसार</span></div>
+  </div>
+  <div class="cat-grid"><a class="cat-card" href="category-must-read.html">
+      <div class="cat-card-icon">🔥</div>
+      <div class="cat-card-title"><span class="en">Must Read Webtoons</span><span class="hi">ज़रूर पढ़ें</span></div>
+      <div class="cat-card-count">9 titles</div>
+    </a><a class="cat-card" href="category-fantasy.html">
+      <div class="cat-card-icon">⚔️</div>
+      <div class="cat-card-title"><span class="en">Fantasy Webtoons</span><span class="hi">फैंटेसी वेबटून</span></div>
+      <div class="cat-card-count">10 titles</div>
+    </a><a class="cat-card" href="category-magic-academy.html">
+      <div class="cat-card-icon">🏫</div>
+      <div class="cat-card-title"><span class="en">Magic Academy</span><span class="hi">मैजिक अकादमी</span></div>
+      <div class="cat-card-count">2 titles</div>
+    </a><a class="cat-card" href="category-noble-family.html">
+      <div class="cat-card-icon">👑</div>
+      <div class="cat-card-title"><span class="en">Noble Family Stories</span><span class="hi">कुलीन परिवार</span></div>
+      <div class="cat-card-count">3 titles</div>
+    </a><a class="cat-card" href="category-system.html">
+      <div class="cat-card-icon">🎮</div>
+      <div class="cat-card-title"><span class="en">System Webtoons</span><span class="hi">सिस्टम वेबटून</span></div>
+      <div class="cat-card-count">3 titles</div>
+    </a><a class="cat-card" href="category-comedy.html">
+      <div class="cat-card-icon">😂</div>
+      <div class="cat-card-title"><span class="en">Comedy Webtoons</span><span class="hi">कॉमेडी वेबटून</span></div>
+      <div class="cat-card-count">7 titles</div>
+    </a><a class="cat-card" href="category-romance.html">
+      <div class="cat-card-icon">❤️</div>
+      <div class="cat-card-title"><span class="en">Romance Webtoons</span><span class="hi">रोमांस वेबटून</span></div>
+      <div class="cat-card-count">4 titles</div>
+    </a><a class="cat-card" href="category-thriller.html">
+      <div class="cat-card-icon">😱</div>
+      <div class="cat-card-title"><span class="en">Thriller Webtoons</span><span class="hi">थ्रिलर वेबटून</span></div>
+      <div class="cat-card-count">2 titles</div>
+    </a></div>
+  <div class="section-head" style="margin-top:24px;">
+    <div class="section-title"><span class="en">Top Rated</span><span class="hi">टॉप रेटेड</span></div>
+    <a class="see-all" href="category-must-read.html"><span class="en">See all →</span><span class="hi">सभी देखें →</span></a>
+  </div>
+  <div class="card-grid"><a class="card" href="omniscient-reader.html">
+      <div class="card-thumb thumb-webtoon">📖</div>
+      <div class="card-body">
+        <div class="card-title">Omniscient Reader's Viewpoint</div>
+        <div class="card-meta"><span class="tag tag-webtoon">Webtoon</span><span class="card-score">9.6</span></div>
+      </div></a><a class="card" href="weak-hero.html">
+      <div class="card-thumb thumb-webtoon">👊</div>
+      <div class="card-body">
+        <div class="card-title">Weak Hero</div>
+        <div class="card-meta"><span class="tag tag-webtoon">Webtoon</span><span class="card-score">9.3</span></div>
+      </div></a><a class="card" href="solo-leveling.html">
+      <div class="card-thumb thumb-anime">⚔️</div>
+      <div class="card-body">
+        <div class="card-title">Solo Leveling</div>
+        <div class="card-meta"><span class="tag tag-anime">Anime</span><span class="card-score">9.2</span></div>
+      </div></a><a class="card" href="mount-hua-sect.html">
+      <div class="card-thumb thumb-webtoon">🌺</div>
+      <div class="card-body">
+        <div class="card-title">Return of the Mount Hua Sect</div>
+        <div class="card-meta"><span class="tag tag-webtoon">Webtoon</span><span class="card-score">9.2</span></div>
+      </div></a><a class="card" href="tower-of-god.html">
+      <div class="card-thumb thumb-webtoon">🗼</div>
+      <div class="card-body">
+        <div class="card-title">Tower of God</div>
+        <div class="card-meta"><span class="tag tag-webtoon">Webtoon</span><span class="card-score">9.1</span></div>
+      </div></a><a class="card" href="greatest-estate.html">
+      <div class="card-thumb thumb-webtoon">🏰</div>
+      <div class="card-body">
+        <div class="card-title">The Greatest Estate Developer</div>
+        <div class="card-meta"><span class="tag tag-webtoon">Webtoon</span><span class="card-score">9.1</span></div>
+      </div></a></div>
+  <div class="section-head" style="margin-top:8px;">
+    <div class="section-title"><span class="en">🏆 AniDesi Rankings</span><span class="hi">🏆 AniDesi रैंकिंग</span></div>
+  </div>
+  <div class="rank-list"><a class="rank-row" href="omniscient-reader.html">
+      <div class="rank-num top3">1</div>
+      <div class="rank-thumb thumb-webtoon">📖</div>
+      <div class="rank-info">
+        <div class="rank-title">Omniscient Reader's Viewpoint</div>
+        <div class="rank-sub"><span class="en">Webtoon · Fantasy, Action</span><span class="hi">Webtoon · Fantasy, Action</span></div>
+      </div>
+      <div class="rank-score">9.6</div>
+    </a><a class="rank-row" href="weak-hero.html">
+      <div class="rank-num top3">2</div>
+      <div class="rank-thumb thumb-webtoon">👊</div>
+      <div class="rank-info">
+        <div class="rank-title">Weak Hero</div>
+        <div class="rank-sub"><span class="en">Webtoon · Action, School</span><span class="hi">Webtoon · Action, School</span></div>
+      </div>
+      <div class="rank-score">9.3</div>
+    </a><a class="rank-row" href="solo-leveling.html">
+      <div class="rank-num top3">3</div>
+      <div class="rank-thumb thumb-anime">⚔️</div>
+      <div class="rank-info">
+        <div class="rank-title">Solo Leveling</div>
+        <div class="rank-sub"><span class="en">Webtoon · Action, Fantasy</span><span class="hi">Webtoon · Action, Fantasy</span></div>
+      </div>
+      <div class="rank-score">9.2</div>
+    </a><a class="rank-row" href="mount-hua-sect.html">
+      <div class="rank-num">4</div>
+      <div class="rank-thumb thumb-webtoon">🌺</div>
+      <div class="rank-info">
+        <div class="rank-title">Return of the Mount Hua Sect</div>
+        <div class="rank-sub"><span class="en">Webtoon · Action, Fantasy</span><span class="hi">Webtoon · Action, Fantasy</span></div>
+      </div>
+      <div class="rank-score">9.2</div>
+    </a><a class="rank-row" href="tower-of-god.html">
+      <div class="rank-num">5</div>
+      <div class="rank-thumb thumb-webtoon">🗼</div>
+      <div class="rank-info">
+        <div class="rank-title">Tower of God</div>
+        <div class="rank-sub"><span class="en">Webtoon · Fantasy, Adventure</span><span class="hi">Webtoon · Fantasy, Adventure</span></div>
+      </div>
+      <div class="rank-score">9.1</div>
+    </a><a class="rank-row" href="greatest-estate.html">
+      <div class="rank-num">6</div>
+      <div class="rank-thumb thumb-webtoon">🏰</div>
+      <div class="rank-info">
+        <div class="rank-title">The Greatest Estate Developer</div>
+        <div class="rank-sub"><span class="en">Webtoon · Comedy, Fantasy</span><span class="hi">Webtoon · Comedy, Fantasy</span></div>
+      </div>
+      <div class="rank-score">9.1</div>
+    </a><a class="rank-row" href="tbate.html">
+      <div class="rank-num">7</div>
+      <div class="rank-thumb thumb-anime">⚡</div>
+      <div class="rank-info">
+        <div class="rank-title">The Beginning After the End</div>
+        <div class="rank-sub"><span class="en">Webtoon · Fantasy, Magic Academy</span><span class="hi">Webtoon · Fantasy, Magic Academy</span></div>
+      </div>
+      <div class="rank-score">9.0</div>
+    </a><a class="rank-row" href="remarried-empress.html">
+      <div class="rank-num">8</div>
+      <div class="rank-thumb thumb-webtoon">👑</div>
+      <div class="rank-info">
+        <div class="rank-title">The Remarried Empress</div>
+        <div class="rank-sub"><span class="en">Webtoon · Romance, Fantasy</span><span class="hi">Webtoon · Romance, Fantasy</span></div>
+      </div>
+      <div class="rank-score">9.0</div>
+    </a></div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">AniDesi</div>
+    <div class="footer-links">
+      <a class="footer-link" href="index.html"><span class="en">Home</span><span class="hi">होम</span></a>
+      <a class="footer-link" href="#"><span class="en">Privacy Policy</span><span class="hi">गोपनीयता नीति</span></a>
+      <a class="footer-link" href="#"><span class="en">Disclaimer</span><span class="hi">अस्वीकरण</span></a>
+    </div>
+    <div class="footer-copy">
+      <span class="en">© 2025 AniDesi · Independent review platform · Not affiliated with any studio or publisher</span>
+      <span class="hi">© 2025 AniDesi · Independent review platform · किसी studio से affiliated नहीं</span>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleLang(){
+  var b=document.body,isEn=b.classList.contains('lang-en');
+  b.classList.toggle('lang-en',!isEn);b.classList.toggle('lang-hi',isEn);
+  document.getElementById('active-lang').textContent=isEn?'हिंदी':'EN';
+  document.getElementById('inactive-lang').textContent=isEn?'EN':'हिंदी';
+  localStorage.setItem('anidesi-lang',isEn?'hi':'en');
+}
+(function(){
+  var s=localStorage.getItem('anidesi-lang');
+  if(s==='hi'){
+    document.body.classList.replace('lang-en','lang-hi');
+    document.getElementById('active-lang').textContent='हिंदी';
+    document.getElementById('inactive-lang').textContent='EN';
+  }
+})();
+document.querySelectorAll&&document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    this.closest('.tab-bar').querySelectorAll('.tab').forEach(function(x){x.classList.remove('active');});
+    this.classList.add('active');
+  });
+});
+</script>
+</body></html>

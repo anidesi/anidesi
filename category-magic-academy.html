@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏫 Magic Academy — AniDesi — AniDesi</title>
+<meta name="description" content="Schools where magic, power, and drama collide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Ani<span class="dot">Desi</span></a>
+    <div class="nav-links">
+      <a class="nav-link " href="index.html"><span class="en">Home</span><span class="hi">होम</span></a>
+      <a class="nav-link " href="category-must-read.html"><span class="en">All Webtoons</span><span class="hi">सभी वेबटून</span></a>
+    </div>
+    <div class="lang-toggle" onclick="toggleLang()">
+      <span id="active-lang" class="pill">EN</span>
+      <span id="inactive-lang" class="dim">हिंदी</span>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="cat-pills"><a class="cat-pill " href="category-must-read.html">🔥 <span class="en">Must Read Webtoons</span><span class="hi">ज़रूर पढ़ें</span></a><a class="cat-pill " href="category-fantasy.html">⚔️ <span class="en">Fantasy Webtoons</span><span class="hi">फैंटेसी वेबटून</span></a><a class="cat-pill active" href="category-magic-academy.html">🏫 <span class="en">Magic Academy</span><span class="hi">मैजिक अकादमी</span></a><a class="cat-pill " href="category-noble-family.html">👑 <span class="en">Noble Family Stories</span><span class="hi">कुलीन परिवार</span></a><a class="cat-pill " href="category-system.html">🎮 <span class="en">System Webtoons</span><span class="hi">सिस्टम वेबटून</span></a><a class="cat-pill " href="category-comedy.html">😂 <span class="en">Comedy Webtoons</span><span class="hi">कॉमेडी वेबटून</span></a><a class="cat-pill " href="category-romance.html">❤️ <span class="en">Romance Webtoons</span><span class="hi">रोमांस वेबटून</span></a><a class="cat-pill " href="category-thriller.html">😱 <span class="en">Thriller Webtoons</span><span class="hi">थ्रिलर वेबटून</span></a></div>
+  <div class="cat-header">
+    <div class="cat-icon">🏫</div>
+    <div>
+      <h1 class="cat-title"><span class="en">Magic Academy</span><span class="hi">मैजिक अकादमी</span></h1>
+      <div class="cat-desc"><span class="en">Schools where magic, power, and drama collide.</span><span class="hi">जहाँ magic, power और drama मिलते हैं।</span></div>
+      <div class="cat-count"><span class="en">2 titles</span><span class="hi">2 titles</span></div>
+    </div>
+  </div>
+  <div class="card-grid card-grid-wide"><a class="card" href="tbate.html">
+      <div class="card-thumb thumb-anime">⚡</div>
+      <div class="card-body">
+        <div class="card-title">The Beginning After the End</div>
+        <div class="card-subtitle en">Webtoon</div>
+        <div class="card-meta"><span class="tag" style="background:var(--purple-light);color:var(--purple-dark);font-size:9px;">Anime</span><span class="card-score">9.0</span></div>
+        <div class="card-syn en" style="font-size:11px;color:var(--text-muted);margin-top:5px;line-height:1.5;">King Grey, the mightiest ruler of his world, dies and reincarnates in a magical realm with…</div>
+        <div class="card-syn hi" style="font-size:11px;color:var(--text-muted);margin-top:5px;line-height:1.5;font-family:'Noto Sans Devanagari',sans-serif;">सबसे शक्तिशाली King Grey magic वाली दुनिया में reincarnate होता है और …</div>
+      </div></a><a class="card" href="god-of-highschool.html">
+      <div class="card-thumb thumb-webtoon">🥊</div>
+      <div class="card-body">
+        <div class="card-title">The God of High School</div>
+        <div class="card-subtitle en">Webtoon</div>
+        <div class="card-meta"><span class="tag" style="background:var(--purple-light);color:var(--purple-dark);font-size:9px;">Anime</span><span class="card-score">8.5</span></div>
+        <div class="card-syn en" style="font-size:11px;color:var(--text-muted);margin-top:5px;line-height:1.5;">A nationwide high school tournament where the winner gets any wish granted. Jin Mori enter…</div>
+        <div class="card-syn hi" style="font-size:11px;color:var(--text-muted);margin-top:5px;line-height:1.5;font-family:'Noto Sans Devanagari',sans-serif;">एक nationwide high school tournament जहाँ winner की कोई भी wish पूरी ह…</div>
+      </div></a></div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">AniDesi</div>
+    <div class="footer-links">
+      <a class="footer-link" href="index.html"><span class="en">Home</span><span class="hi">होम</span></a>
+      <a class="footer-link" href="#"><span class="en">Privacy Policy</span><span class="hi">गोपनीयता नीति</span></a>
+      <a class="footer-link" href="#"><span class="en">Disclaimer</span><span class="hi">अस्वीकरण</span></a>
+    </div>
+    <div class="footer-copy">
+      <span class="en">© 2025 AniDesi · Independent review platform · Not affiliated with any studio or publisher</span>
+      <span class="hi">© 2025 AniDesi · Independent review platform · किसी studio से affiliated नहीं</span>
+    </div>
+  </div>
+</footer>
+<script>
+function toggleLang(){
+  var b=document.body,isEn=b.classList.contains('lang-en');
+  b.classList.toggle('lang-en',!isEn);b.classList.toggle('lang-hi',isEn);
+  document.getElementById('active-lang').textContent=isEn?'हिंदी':'EN';
+  document.getElementById('inactive-lang').textContent=isEn?'EN':'हिंदी';
+  localStorage.setItem('anidesi-lang',isEn?'hi':'en');
+}
+(function(){
+  var s=localStorage.getItem('anidesi-lang');
+  if(s==='hi'){
+    document.body.classList.replace('lang-en','lang-hi');
+    document.getElementById('active-lang').textContent='हिंदी';
+    document.getElementById('inactive-lang').textContent='EN';
+  }
+})();
+document.querySelectorAll&&document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click',function(){
+    this.closest('.tab-bar').querySelectorAll('.tab').forEach(function(x){x.classList.remove('active');});
+    this.classList.add('active');
+  });
+});
+</script>
+</body></html>
